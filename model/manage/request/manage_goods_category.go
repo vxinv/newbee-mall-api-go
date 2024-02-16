@@ -1,8 +1,8 @@
 package request
 
 import (
-	"main.go/model/common"
-	"main.go/model/common/request"
+	"main/model/common"
+	"main/model/common/request"
 )
 
 type MallGoodsCategoryReq struct {

@@ -1,7 +1,7 @@
 package example
 
 import (
-	"main.go/model/common"
+	"main/model/common"
 )
 
 // file struct, 文件结构体

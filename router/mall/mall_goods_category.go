@@ -2,7 +2,7 @@ package mall
 
 import (
 	"github.com/gin-gonic/gin"
-	v1 "main.go/api/v1"
+	v1 "main/api/v1"
 )
 
 type MallGoodsCategoryIndexRouter struct {

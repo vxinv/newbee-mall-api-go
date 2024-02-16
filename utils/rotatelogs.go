@@ -3,7 +3,7 @@ package utils
 import (
 	"github.com/natefinch/lumberjack"
 	"go.uber.org/zap/zapcore"
-	"main.go/global"
+	"main/global"
 	"os"
 )
 

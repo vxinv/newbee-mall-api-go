@@ -1,8 +1,8 @@
 package router
 
 import (
-	"main.go/router/mall"
-	"main.go/router/manage"
+	"main/router/mall"
+	"main/router/manage"
 )
 
 type RouterGroup struct {

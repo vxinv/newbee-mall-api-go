@@ -35,7 +35,7 @@ git clone https://github.com/newbee-ltd/newbee-mall-api-go
 # 使用 go mod 并安装go依赖包
 go generate
 # 编译 
-go build -o server main.go (windows编译命令为go build -o server.exe main.go )
+go build -o server main (windows编译命令为go build -o server.exe main )
 # 运行二进制
 ./server (windows运行命令为 server.exe)
 ```

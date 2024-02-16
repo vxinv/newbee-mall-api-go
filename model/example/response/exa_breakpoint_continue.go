@@ -1,6 +1,6 @@
 package response
 
-import "main.go/model/example"
+import "main/model/example"
 
 type FilePathResponse struct {
 	FilePath string `json:"filePath"`

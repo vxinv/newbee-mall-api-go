@@ -1,6 +1,6 @@
 package response
 
-import "main.go/model/manage"
+import "main/model/manage"
 
 type GoodsCategoryResponse struct {
 	GoodsCategory manage.MallGoodsCategory `json:"mallGoodsCategory"`

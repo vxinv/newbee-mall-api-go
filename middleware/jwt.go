@@ -2,13 +2,19 @@ package middleware
 
 import (
 	"github.com/gin-gonic/gin"
-	"main.go/model/common/response"
-	"main.go/service"
+	"main/model/common/response"
+	"main/service/mall_service"
+	"main/service/manage_service"
 	"time"
 )
 
-var manageAdminUserTokenService = service.ServiceGroupApp.ManageServiceGroup.ManageAdminUserTokenService
-var mallUserTokenService = service.ServiceGroupApp.MallServiceGroup.MallUserTokenService
+var (
+	ms  manage_service.ManageAdminUserTokenService
+	mus mall_service.MallUserTokenService
+)
+
+//var manageAdminUserTokenService = service.ServiceGroupApp.ManageServiceGroup.ManageAdminUserTokenService
+//var mallUserTokenService = service.ServiceGroupApp.MallServiceGroup.MallUserTokenService
 
 func AdminJWTAuth() gin.HandlerFunc {
 	return func(c *gin.Context) {
@@ -18,7 +24,7 @@ func AdminJWTAuth() gin.HandlerFunc {
 			c.Abort()
 			return
 		}
-		err, mallAdminUserToken := manageAdminUserTokenService.ExistAdminToken(token)
+		err, mallAdminUserToken := ms.ExistAdminToken(token)
 		if err != nil {
 			response.FailWithDetailed(nil, "未登录或非法访问", c)
 			c.Abort()
@@ -26,7 +32,7 @@ func AdminJWTAuth() gin.HandlerFunc {
 		}
 		if time.Now().After(mallAdminUserToken.ExpireTime) {
 			response.FailWithDetailed(nil, "授权已过期", c)
-			err = manageAdminUserTokenService.DeleteMallAdminUserToken(token)
+			err = ms.DeleteMallAdminUserToken(token)
 			if err != nil {
 				return
 			}
@@ -46,15 +52,15 @@ func UserJWTAuth() gin.HandlerFunc {
 			c.Abort()
 			return
 		}
-		err, mallUserToken := mallUserTokenService.ExistUserToken(token)
+		err, _ := mus.ExistUserToken(token)
 		if err != nil {
 			response.UnLogin(nil, c)
 			c.Abort()
 			return
 		}
-		if time.Now().After(mallUserToken.ExpireTime) {
+		if time.Now().After(mus.ExpireTime) {
 			response.FailWithDetailed(nil, "授权已过期", c)
-			err = mallUserTokenService.DeleteMallUserToken(token)
+			err = mus.DeleteMallUserToken(token)
 			if err != nil {
 				return
 			}

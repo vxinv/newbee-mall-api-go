@@ -1,7 +1,7 @@
 package mall
 
 import (
-	"main.go/model/common"
+	"main/model/common"
 )
 
 // MallShoppingCartItem 结构体

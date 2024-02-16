@@ -1,6 +1,6 @@
 package manage
 
-import "main.go/model/common"
+import "main/model/common"
 
 type MallOrderItem struct {
 	OrderItemId   int             `json:"orderItemId" gorm:"primarykey;AUTO_INCREMENT"`

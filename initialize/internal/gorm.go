@@ -4,7 +4,7 @@ import (
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
 	"log"
-	"main.go/global"
+	"main/global"
 	"os"
 	"time"
 )

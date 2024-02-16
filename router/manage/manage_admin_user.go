@@ -2,8 +2,8 @@ package manage
 
 import (
 	"github.com/gin-gonic/gin"
-	v1 "main.go/api/v1"
-	"main.go/middleware"
+	v1 "main/api/v1"
+	"main/middleware"
 )
 
 type ManageAdminUserRouter struct {

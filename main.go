@@ -1,9 +1,10 @@
 package main
 
 import (
-	"main.go/core"
-	"main.go/global"
-	"main.go/initialize"
+	"main/api/v1"
+	"main/core"
+	"main/global"
+	"main/initialize"
 )
 
 func main() {
@@ -12,5 +13,5 @@ func main() {
 	global.GVA_LOG = core.Zap()       // 初始化zap日志库
 	global.GVA_DB = initialize.Gorm() // gorm连接数据库
 
-	core.RunWindowsServer()
+	v1.RunWindowsServer()
 }

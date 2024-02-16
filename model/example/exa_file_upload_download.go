@@ -1,6 +1,6 @@
 package example
 
-import "main.go/model/common"
+import "main/model/common"
 
 type ExaFileUploadAndDownload struct {
 	ID         int             `gorm:"primarykey"`                                                      // 主键ID

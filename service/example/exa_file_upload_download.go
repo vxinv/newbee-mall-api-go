@@ -2,10 +2,10 @@ package example
 
 import (
 	"errors"
-	"main.go/global"
-	"main.go/model/common/request"
-	"main.go/model/example"
-	"main.go/utils/upload"
+	"main/global"
+	"main/model/common/request"
+	"main/model/example"
+	"main/utils/upload"
 	"mime/multipart"
 	"strings"
 )

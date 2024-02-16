@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
-	"main.go/global"
-	"main.go/utils"
+	"main/global"
+	"main/utils"
 	"os"
 	"time"
 )

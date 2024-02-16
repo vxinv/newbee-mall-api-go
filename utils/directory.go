@@ -2,7 +2,7 @@ package utils
 
 import (
 	"go.uber.org/zap"
-	"main.go/global"
+	"main/global"
 	"os"
 )
 

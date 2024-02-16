@@ -1,7 +1,7 @@
 package upload
 
 import (
-	"main.go/global"
+	"main/global"
 	"mime/multipart"
 )
 

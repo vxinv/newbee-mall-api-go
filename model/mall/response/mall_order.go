@@ -1,6 +1,6 @@
 package response
 
-import "main.go/model/common"
+import "main/model/common"
 
 type MallOrderResponse struct {
 	OrderId                int                     `json:"orderId"`

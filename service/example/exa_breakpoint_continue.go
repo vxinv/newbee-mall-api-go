@@ -3,8 +3,8 @@ package example
 import (
 	"errors"
 	"gorm.io/gorm"
-	"main.go/global"
-	"main.go/model/example"
+	"main/global"
+	"main/model/example"
 )
 
 type FileUploadAndDownloadService struct {

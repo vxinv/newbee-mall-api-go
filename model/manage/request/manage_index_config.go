@@ -1,8 +1,8 @@
 package request
 
 import (
-	"main.go/model/common/request"
-	"main.go/model/manage"
+	"main/model/common/request"
+	"main/model/manage"
 )
 
 type MallIndexConfigSearch struct {

@@ -3,7 +3,7 @@ package internal
 import (
 	"fmt"
 	"gorm.io/gorm/logger"
-	"main.go/global"
+	"main/global"
 )
 
 type writer struct {

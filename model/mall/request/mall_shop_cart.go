@@ -1,7 +1,7 @@
 package request
 
 import (
-	"main.go/model/common/request"
+	"main/model/common/request"
 )
 
 type MallShopCartSearch struct {

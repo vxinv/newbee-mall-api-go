@@ -1,13 +1,13 @@
 package v1
 
 import (
-	"main.go/api/v1/mall"
-	"main.go/api/v1/manage"
+	"main/api/v1/mall_api"
+	"main/api/v1/manage_api"
 )
 
 type ApiGroup struct {
-	ManageApiGroup manage.ManageGroup
-	MallApiGroup   mall.MallGroup
+	ManageApiGroup manage_api.ManageGroup
+	MallApiGroup   mall_api.MallGroup
 }
 
 var ApiGroupApp = new(ApiGroup)

@@ -1,7 +1,7 @@
 package manage
 
 import (
-	"main.go/model/common"
+	"main/model/common"
 )
 
 type MallOrder struct {

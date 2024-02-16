@@ -1,7 +1,7 @@
 package mall
 
 import (
-	"main.go/model/common"
+	"main/model/common"
 )
 
 // MallUserAddress 结构体
