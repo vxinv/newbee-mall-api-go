@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"github.com/fvbock/endless"
 	"github.com/gin-gonic/gin"
+	"main/api/router"
 	"main/global"
 	"main/middleware"
-	"main/router"
 	"net/http"
 	"time"
 

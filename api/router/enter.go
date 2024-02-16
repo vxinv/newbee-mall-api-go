@@ -1,8 +1,8 @@
 package router
 
 import (
-	"main/router/mall"
-	"main/router/manage"
+	"main/api/router/mall"
+	"main/api/router/manage"
 )
 
 type RouterGroup struct {

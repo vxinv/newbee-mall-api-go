@@ -19,6 +19,7 @@ func (m *MallUserRouter) InitMallUserAddressRouter(Router *gin.RouterGroup) {
 		mallUserAddressRouter.GET("/address/:addressId", mallUserAddressApi.GetMallUserAddress)     //获取地址详情
 		mallUserAddressRouter.GET("/address/default", mallUserAddressApi.GetMallUserDefaultAddress) //获取默认地址
 		mallUserAddressRouter.DELETE("/address/:addressId", mallUserAddressApi.DeleteUserAddress)   //删除地址
+
 	}
 
 }

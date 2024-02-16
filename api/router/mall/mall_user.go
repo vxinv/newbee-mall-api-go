@@ -21,7 +21,6 @@ func (m *MallUserRouter) InitMallUserRouter(Router *gin.RouterGroup) {
 	{
 		userRouter.POST("/user/register", mallUserApi.UserRegister) //用户注册
 		userRouter.POST("/user/login", mallUserApi.UserLogin)       //登陆
-
 	}
 
 }
